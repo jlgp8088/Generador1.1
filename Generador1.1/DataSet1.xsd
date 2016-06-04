@@ -12,7 +12,7 @@
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="copia" msdata:Caption="nombreempresa" msprop:Generator_ColumnVarNameInTable="columncopia" msprop:Generator_ColumnPropNameInRow="copia" msprop:Generator_ColumnPropNameInTable="copiaColumn" msprop:Generator_UserColumnName="copia" type="xs:string" minOccurs="0" />
@@ -58,6 +58,7 @@
               <xs:element name="horaentrega" msdata:Caption="nombreempresa" msprop:Generator_ColumnVarNameInTable="columnhoraentrega" msprop:Generator_ColumnPropNameInRow="horaentrega" msprop:Generator_ColumnPropNameInTable="horaentregaColumn" msprop:Generator_UserColumnName="horaentrega" type="xs:string" minOccurs="0" />
               <xs:element name="nitempresa" msdata:Caption="nombreempresa" msprop:Generator_ColumnVarNameInTable="columnnitempresa" msprop:Generator_ColumnPropNameInRow="nitempresa" msprop:Generator_ColumnPropNameInTable="nitempresaColumn" msprop:Generator_UserColumnName="nitempresa" type="xs:string" minOccurs="0" />
               <xs:element name="nombreempresa" msprop:Generator_ColumnVarNameInTable="columnnombreempresa" msprop:Generator_ColumnPropNameInRow="nombreempresa" msprop:Generator_ColumnPropNameInTable="nombreempresaColumn" msprop:Generator_UserColumnName="nombreempresa" type="xs:string" minOccurs="0" />
+              <xs:element name="reteica" msprop:Generator_ColumnVarNameInTable="columnreteica" msprop:Generator_ColumnPropNameInRow="reteica" msprop:Generator_ColumnPropNameInTable="reteicaColumn" msprop:Generator_UserColumnName="reteica" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

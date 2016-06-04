@@ -365,6 +365,8 @@ namespace Generador1._1 {
             
             private global::System.Data.DataColumn columnnombreempresa;
             
+            private global::System.Data.DataColumn columnreteica;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DataTable1DataTable() {
@@ -744,6 +746,14 @@ namespace Generador1._1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn reteicaColumn {
+                get {
+                    return this.columnreteica;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -822,7 +832,8 @@ namespace Generador1._1 {
                         string codebar, 
                         string horaentrega, 
                         string nitempresa, 
-                        string nombreempresa) {
+                        string nombreempresa, 
+                        string reteica) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         copia,
@@ -867,7 +878,8 @@ namespace Generador1._1 {
                         codebar,
                         horaentrega,
                         nitempresa,
-                        nombreempresa};
+                        nombreempresa,
+                        reteica};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -933,6 +945,7 @@ namespace Generador1._1 {
                 this.columnhoraentrega = base.Columns["horaentrega"];
                 this.columnnitempresa = base.Columns["nitempresa"];
                 this.columnnombreempresa = base.Columns["nombreempresa"];
+                this.columnreteica = base.Columns["reteica"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1024,6 +1037,8 @@ namespace Generador1._1 {
                 base.Columns.Add(this.columnnitempresa);
                 this.columnnombreempresa = new global::System.Data.DataColumn("nombreempresa", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombreempresa);
+                this.columnreteica = new global::System.Data.DataColumn("reteica", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnreteica);
                 this.columncopia.Caption = "nombreempresa";
                 this.columndirempresa.Caption = "nombreempresa";
                 this.columntelempresa.Caption = "nombreempresa";
@@ -1896,6 +1911,22 @@ namespace Generador1._1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string reteica {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.reteicaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'reteica\' in table \'DataTable1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.reteicaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IscopiaNull() {
                 return this.IsNull(this.tableDataTable1.copiaColumn);
             }
@@ -2408,6 +2439,18 @@ namespace Generador1._1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetnombreempresaNull() {
                 this[this.tableDataTable1.nombreempresaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsreteicaNull() {
+                return this.IsNull(this.tableDataTable1.reteicaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetreteicaNull() {
+                this[this.tableDataTable1.reteicaColumn] = global::System.Convert.DBNull;
             }
         }
         
